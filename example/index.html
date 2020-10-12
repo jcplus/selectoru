@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Selectoru Demo</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- External libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+        <!-- Load selectoru -->
+        <script src="../src/selectoru.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="../src/selectoru.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Selectoru Demo</h1>
+            <div class="examples">
+                <h2>Examples</h2>
+
+                <div class="example">
+                    <h3>Basic Usage</h3>
+                    <div class="block">
+                        <div class="row label">Country</div>
+                        <div class="row">
+                            <select name="country" id="country-list1">
+                            	<option value="AF">Afghanistan</option>
+                            	<option value="AS">American Samoa</option>
+                            	<option value="AU" selected>Australia</option>
+                            	<option value="BH">Bahrain</option>
+                            	<option value="BE">Belgium</option>
+                            	<option value="BZ">Belize</option>
+                            	<option value="BR">Brazil</option>
+                            	<option value="UM">United States Minor Outlying Islands</option>
+                            	<option value="VG">Virgin Islands (British)</option>
+                            	<option value="VI">Virgin Islands (U.S.)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="description"></div>
+                    <div class="code"></div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('country-list1').selectoru();
+});
+</script>
