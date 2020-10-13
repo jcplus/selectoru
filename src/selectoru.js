@@ -43,6 +43,11 @@ Selectoru.prototype.renderDropdown = function () {
     return dropdown;
 };
 
+Selectoru.prototype.renderDropdownArrow = function () {
+    var arrow = document.createElement('div');
+    icon = document.createElement('div');
+};
+
 Selectoru.prototype.renderInput = function () {
     var holder = document.createElement('div'),
         input = document.createElement('input');
